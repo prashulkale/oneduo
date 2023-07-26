@@ -48,9 +48,9 @@ var tl = gsap.timeline({
         trigger : ".page1 h1",
         scroller : ".main",
         // markers : true,
-        start : "top 30%",
-        end : "top 0",
-        scrub : 3
+        start : " 0% 30%",
+        end : "60% 0",
+        scrub : 4
        
     }
 })
@@ -61,6 +61,7 @@ tl.to(" .page1 h1",{
     x : -100,
   
 },"an")
+
 tl.to(" .page1 h2",{
     x : 100,
   
@@ -68,7 +69,7 @@ tl.to(" .page1 h2",{
 
 tl.to(".page1 video" , {
     width : "90%"
-})
+},"an")
 
 
 var tl2 = gsap.timeline({
@@ -88,3 +89,10 @@ tl2.to(".main",{
     backgroundColor : "#fff"
 
 })
+var crsr = document.querySelector(".curser");
+var main = document.querySelector("body")
+
+ main.addEventListener("mousemove" , (dts) =>{
+  crsr.style.left = dts.x + "px"
+  crsr.style.top = dts.y + "px"
+ })

@@ -16,18 +16,34 @@ html,body{
 .main{
     position: relative;
     overflow: hidden;
-    background-color: #0f0d0d;
 }
 
+.curser{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: 80%;
+    border: 2px solid white;
+    mix-blend-mode: difference;
+    z-index: 1;
+    transition:  all  .5s cubic-bezier(0.19, 1, 0.22, 1) ;
+}
 .page1{
     height: 140vh;
     width: 100%;
     color: white;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
 }
 
 
 #nav{
+    
+    z-index: 1;
+    mix-blend-mode: difference;
    height: 50px;
    width: 100%; 
     display: flex;
@@ -35,12 +51,12 @@ html,body{
     justify-content: space-between;
     align-items: center;
     padding:  0 20px;
-    /* color: aliceblue; */
+    color: aliceblue;
+    position: fixed;
+    top: 10;
 }
-
 #nav img{
-    height: 25px;
-   
+    height: 25px;   
 
 
 }
@@ -56,7 +72,7 @@ html,body{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 #nav h4{
     font-size: 14px;
@@ -69,16 +85,16 @@ html,body{
 }
 
 .page1 h1{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 8vw;
-    margin-top: 12vw;
-    margin-left: 6vw;
+    padding-top: 8vw;
+    margin-left: 10vw;
 }
 
 .page1 h2{
     font-size: 8vw;
     font-weight: 400;
-    margin-left: 26vw;
+    margin-left: 22vw;
 }
 
 .page1 video{
@@ -91,18 +107,19 @@ html,body{
 } 
 
 .page2{
-    height: 130vh;
+    height: 120vh;
     width: 100vw;
     padding: 5vw;
     padding-top: 25vw;
     /* background-color: white; */
+    border-bottom: 2px solid black;
 
 
 }
 
 .page2 h1{
     font-size: 7vw;
-    font-weight: normal;
+    font-weight: 500;
 
     color: rgb(7, 6, 4);
 
@@ -144,5 +161,40 @@ html,body{
     padding: 4px 0;
     background-color: rgb(243, 140, 234);
     margin-top: 20px;
+
+}
+
+.page3{
+    width: 100vw;
+    height: 150vh;
+    background: rgb(255, 255, 255);
+    padding: 5%;
+}
+.page3 h1{
+
+    font-size: 7vw;
+    font-weight: normal;
+
+}
+.page3_part1{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+
+}
+
+.page3_part1 img{
+    margin-top: 10vw;
+    width: 40%;
+    height: 50%;
+
+
+}
+.page3_part1 video{
+    width: 50%;
+    height: 50%;
+    margin-top: 2%;
+
 
 }
