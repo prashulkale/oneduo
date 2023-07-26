@@ -204,10 +204,10 @@ html,body{
     height: 100vh;
 }
 .page4 .elem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 
 }
 
@@ -217,10 +217,20 @@ html,body{
     width: 25vw;    
     height: 20vw;
     position: absolute;
-    /* opacity: 0; */
+    transition: all .5s;
+    border-radius: 50%;
+    opacity: 0;
 
 
 
+}
+
+
+.page4 .elem img:nth-child(1){
+ left: 10%;
+}
+.page4 .elem img:last-child{
+ right: 10%;
 }
 .page4 .elem h1{
    font-size: 6vw;
@@ -230,13 +240,22 @@ html,body{
     transform: translateY(-100%);
     transition: all 1s;
 }
+.page4 .elem:hover img {
+    opacity: 1;
+    border-radius: 10%;
+    transition: all 1s;
+}
 
 .page4 .elem .text-d{
 
         width: 100vw;
         height: 7vw;
         overflow: hidden;
-        border: 1px solid blue;
+        border: 1px solid rgb(0, 0, 0);
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
 
 }
 

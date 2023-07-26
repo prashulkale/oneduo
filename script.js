@@ -91,6 +91,9 @@ tl2.to(".main",{
 })
 var crsr = document.querySelector(".curser");
 var main = document.querySelector("body")
+var hoverImgTextDiv = document.querySelector(".page4 .elem   .text-d ")
+var hoverImgText = document.querySelector(".page4 .elem   .text-d h1")
+var hoverImg = document.querySelectorAll(".page4 .elem   img")
 
  main.addEventListener("mousemove" , (dts) =>{
   crsr.style.left = dts.x + "px"
