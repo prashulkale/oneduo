@@ -166,7 +166,7 @@ html,body{
 
 .page3{
     width: 100vw;
-    height: 150vh;
+    height: 140vh;
     background: rgb(255, 255, 255);
     padding: 5%;
 }
@@ -198,3 +198,46 @@ html,body{
 
 
 }
+
+.page4{
+    width: 100vw;
+    height: 100vh;
+}
+.page4 .elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+.page4 .elem img{
+    width: 25vw;    
+    height: 20vw;
+    position: absolute;
+    /* opacity: 0; */
+
+
+
+}
+.page4 .elem h1{
+   font-size: 6vw;
+   font-weight: normal;
+}
+.page4 .elem   .text-d:hover h1{
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.page4 .elem .text-d{
+
+        width: 100vw;
+        height: 7vw;
+        overflow: hidden;
+        border: 1px solid blue;
+
+}
+
+
