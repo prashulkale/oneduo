@@ -245,11 +245,9 @@ html,body{
  right: 10%;
 }
 .page4 .elem h1{
-<<<<<<< Updated upstream
-   font-size: 8vw;
-=======
+
    font-size: 9vw;
->>>>>>> Stashed changes
+
    font-weight: normal;
 }
 .page4 .elem   .text-d:hover h1{
