@@ -55,7 +55,13 @@ var tl = gsap.timeline({
     }
 })
 
+$('.heading').textillate({ in: { effect: 'rollIn' } });
 
+ gsap.from(".heading" ,{
+   x : 20
+   
+
+ })
 
 tl.to(" .page1 h1",{
     x : -100,
@@ -99,3 +105,5 @@ var hoverImg = document.querySelectorAll(".page4 .elem   img")
   crsr.style.left = dts.x + "px"
   crsr.style.top = dts.y + "px"
  })
+
+

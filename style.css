@@ -95,6 +95,7 @@ html,body{
     font-size: 8vw;
     padding-top: 8vw;
     margin-left: 10vw;
+    background-origin: left;
 }
 
 .page1 h2{
@@ -244,12 +245,18 @@ html,body{
  right: 10%;
 }
 .page4 .elem h1{
+<<<<<<< Updated upstream
    font-size: 8vw;
+=======
+   font-size: 9vw;
+>>>>>>> Stashed changes
    font-weight: normal;
 }
 .page4 .elem   .text-d:hover h1{
     transform: translateY(-100%);
     transition: all 1s;
+    color: violet;
+    z-index: 11;
 }
 .page4 .elem:hover img {
     opacity: 1;
@@ -260,11 +267,12 @@ html,body{
 .page4 .elem .text-d{
 
         width: 100vw;
-        height: 7vw;
+        height: 9vw;
         overflow: hidden;
         border: 1px solid rgb(0, 0, 0);
         display: flex;
         /* justify-content: center; */
+        
         align-items: center;
         flex-direction: column;
 
