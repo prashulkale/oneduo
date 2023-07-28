@@ -19,25 +19,36 @@ html,body{
 
 }
 
+h1,h2,h3,h4,h5,h6,p{
+    pointer-events: none;
+}
+
 .main{
     position: relative;
     overflow: hidden;
+    /* transition: all .2s; */
+
 }
 
 .curser{
     position: absolute;
-    top: 10%;
-    left: 0;
-    width: 1.5vw;
-    height: 1.5vw;
     background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    opacity: 80%;
-    /* border: 2px solid white; */
     mix-blend-mode: difference;
-    z-index: 1;
-    transition:  all  .5s cubic-bezier(0.19, 1, 0.22, 1) ;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    z-index: 1111111;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-position:  center;
+    background-size: cover;
+    transition: background-image ease .5s;
+} 
+.mixblend{
+    mix-blend-mode: unset;
+    /* width: 100%; */
 }
+
 .page1{
     height: 140vh;
     width: 100%;
@@ -211,8 +222,17 @@ html,body{
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    margin-bottom: 5vw;
+
+    /* background-color: red; */
+
+}
+
+.page4-container{
+    width: 90%;
+    
 
 }
 .page4 .elem{
@@ -227,7 +247,7 @@ html,body{
 
 .page4 .elem img{
     width: 25vw;    
-    height: 20vw;
+    height: 30vw;
     position: absolute;
     transition: all .5s;
     border-radius: 50%;
@@ -239,10 +259,12 @@ html,body{
 
 
 .page4 .elem img:nth-child(1){
- left: 10%;
+ left: 2%;
 }
 .page4 .elem img:last-child{
- right: 10%;
+ right: 2%;
+ bottom: 0;
+    
 }
 .page4 .elem h1{
 
@@ -312,17 +334,25 @@ html,body{
 
 .yeardsc{
     width: 90%;
-    
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.2vw;
     border-top: 1px solid black;
-
+    cursor: pointer;
 }
 .page5 .title{
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hoverImg{
+    position: absolute;
+    width: 25vw;
+    height: 20vw;
+    /* background: #000; */
+    border: 2px double black;
 }
